@@ -1,0 +1,133 @@
+/*Reset do CSS*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.fashioninteriors.co.uk/cache/nproducts/ashley_wilde/cath_kidston/cath_kidston_volume_1/vintage_bunch/_optimized/vintagebunchmu__2000_1420.jpg);
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  /*se a tela tiver pelo menos 700px vai carregar todos esses estilos*/
+  @media (min-width: 600px) {
+    .site-title {
+     font-size: 3em;
+    }
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+    background-color:#eee; 
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+  }
+
+  .menu a:hover{
+    background-color: rgb(232, 217, 245);
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+
+    
+  }
+  
+  .menu li {
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: teal;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color:#aa6580;
+
+  }
+
+  .site-subtitle,
+  .site-title {
+    text-align: center;
+  }
+
+  .site-title {
+    font-weight: normal;
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  .site-subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+  }
+
+   .portfolio .grid {
+    display: grid;
+    gap: 3em; 
+    background-color: white;
+    padding-bottom: 20px;
+    align-content: center;
+    height: calc(100vh - 83px - 20px);
+  }
+
+  @media (min-width: 405px) {
+    .portfolio .grid {
+    grid-template-columns: 150px 150px;  
+    justify-content: center;
+    }
+  }
+
+  @media (min-width: 580px) {
+    .portfolio .grid {
+    grid-template-columns: 150px 150px 150px;  
+    justify-content: center;
+    }
+  }
+
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .portfolio h2 {
+    font-family: 'Playfair Display SC', serif;
+    padding: 20px;
+    font-size: 2em;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .img-portfolio {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+}
+
+  ::selection {
+    background-color: #c27b83;
+  }
+
+  .creditos {
+    background-color: white;
+    font-size: 12px;
+    font-family: Arial;
+    padding: 5px;
+  }
